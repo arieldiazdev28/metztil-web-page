@@ -181,6 +181,9 @@ main {
         grid-row: 1;
     }
 
+    .mensaje-social div {
+        font-size: 0.7rem;
+    }
     .responsive-campos {
         grid-column: 2 / 3;
         grid-row: 1;
