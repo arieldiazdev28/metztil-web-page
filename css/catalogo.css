@@ -1,0 +1,295 @@
+main {
+    margin: 0 0 2rem 0;
+}
+
+/*Estilos del Hero Section*/
+.contenedor-hero {
+    padding: 2rem 2rem 2rem 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(/img/hero-catalogo-imagen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.flechas {
+    width: 3rem;
+}
+
+.contenedor-hero-texto {
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    max-width: 420px;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: white;
+    padding: 1rem;
+}
+
+.descripcion h1 {
+    font-size: 3rem;
+    font-family: 'Lexend Deca';
+}
+
+.descripcion h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Lexend Deca';
+}
+
+.descripcion p {
+    font-family: 'Lexend Deca';
+}
+
+/*Sección de tie-dye*/
+.contenedor-serigrafia,
+.contenedor-descarga {
+    margin: 2rem 0rem;
+}
+
+.contenedor-tie-dye,
+.contenedor-serigrafia,
+.contenedor-descarga {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.categoria-titulo {
+    margin: 2rem 0;
+}
+
+.categoria-contenido {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contenedor-productos {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.producto {
+    width: 200px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Lexend Deca';
+}
+
+.producto.tie_dye h3,
+.producto.serigrafia h3,
+.producto.descarga h3 {
+    font-size: 1.5rem;
+}
+
+
+/* Colores de fondo distintos para cada categoría de producto*/
+.tie_dye {
+    background-color: #1f57a7;
+}
+
+.contenedor-tie-dye h2 {
+    color: #1f57a7;
+    font-family: 'Lexend Deca';
+    font-size: 2.2rem;
+}
+
+.serigrafia {
+    background-color: #e84393;
+}
+
+.contenedor-serigrafia h2 {
+    color: #e84393;
+    font-family: 'Lexend Deca';
+    font-size: 2.2rem;
+}
+
+.descarga {
+    background-color: #E15942;
+}
+
+.contenedor-descarga h2 {
+    color: #E15942;
+    font-family: 'Lexend Deca';
+    font-size: 2.2rem;
+}
+
+.imagen-placeholder {
+    width: 90%;
+    height: 220px;
+    background-color: white;
+    border: 2px dashed #ccc;
+    margin-bottom: 0.8rem;
+}
+
+.producto h3 {
+    margin: 0 0 0.8rem;
+    font-size: 1rem;
+}
+
+.producto button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Estilos responsivos */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-hero {
+        height: 80vh;
+    }
+
+    .flechas {
+        width: 2rem;
+    }
+
+    .descripcion {
+        left: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .descripcion h1 {
+        font-size: 2rem;
+    }
+
+    .descripcion h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /*Sección de Tie-Dye*/
+    .contenedor-tie-dye,
+    .contenedor-serigrafia,
+    .contenedor-descarga {
+        height: 100%;
+    }
+
+    .categoria-contenido {
+        gap: 1rem;
+    }
+
+    .contenedor-productos {
+        gap: 2rem;
+    }
+
+    .producto {
+        width: 160px;
+    }
+
+    .producto:nth-child(4) {
+        display: none;
+    }
+
+    .imagen-placeholder {
+        width: 90%;
+        height: 180px;
+    }
+
+    .producto.tie_dye h3,
+    .producto.serigrafia h3,
+    .producto.descarga h3 {
+        font-size: 0.9rem;
+    }
+
+    .producto button {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-hero {
+        height: 50vh;
+        padding: 1rem;
+    }
+
+    .contenedor-hero {
+        height: 50vh;
+    }
+
+    .flechas {
+        width: 1.8rem;
+    }
+
+    .descripcion {
+        left: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .descripcion h1 {
+        font-size: 1.5rem;
+    }
+
+    .descripcion h2 {
+        font-size: 2rem;
+    }
+
+    /*Sección de Tie-Dye*/
+    .contenedor-tie-dye,
+    .contenedor-serigrafia,
+    .contenedor-descarga {
+        height: 50vh;
+    }
+
+    .categoria-contenido {
+        gap: 1rem;
+    }
+
+    .contenedor-productos {
+        gap: 1rem;
+    }
+
+    .producto {
+        width: 140px;
+    }
+
+    .producto:nth-child(3),
+    .producto:nth-child(4) {
+        display: none;
+    }
+
+    .imagen-placeholder {
+        width: 90%;
+        height: 160px;
+    }
+
+    .producto.tie_dye h3,
+    .producto.serigrafia h3,
+    .producto.descarga h3 {
+        font-size: 0.9rem;
+    }
+
+    .producto button {
+        font-size: 0.7rem;
+    }
+}

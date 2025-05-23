@@ -1,0 +1,391 @@
+main {
+    width: 100%;
+    height: auto;
+}
+
+/*Estilos del Hero Section*/
+.contenedor-hero {
+    padding: 2rem 2rem 2rem 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(/img/hero-imagen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.flechas {
+    width: 3rem;
+}
+
+.contenedor-hero-texto {
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    padding: 1rem;
+}
+
+.descripcion p {
+    font-family: 'Lexend Deca';
+}
+
+.logo-descripcion {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos de la sección "Técnicas" */
+.contenedor-tecnicas {
+    padding: 4rem 1rem;
+    background-color: #1f57a7;
+    text-align: center;
+    overflow: hidden;
+}
+
+.titulo-tecnicas {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Lexend Deca';
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+.tarjetas-tecnicas {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    z-index: 2;
+    position: relative;
+}
+
+.tarjeta {
+    width: 200px;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.tarjeta p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Lexend Deca';
+}
+
+/* Estilos de la sección Historia */
+.contenedor-historia {
+    width: 100%;
+    height: auto;
+    /* Permitir altura dinámica */
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 2rem;
+}
+
+.historia-imagen {
+    flex: 1.5;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.historia-imagen img {
+    width: clamp(200px, 40vw, 400px);
+    height: auto;
+    max-width: 100%;
+}
+
+.historia-texto {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: clamp(1rem, 4vw, 4rem);
+    gap: 1.5rem;
+    font-family: 'Lexend Deca';
+}
+
+.historia-titulo {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    border-radius: 50px;
+    color: white;
+    background-color: #E94B87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia-descripcion {
+    width: 100%;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.historia-descripcion p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    display: inline;
+}
+
+/* Sección de productos */
+.contenedor-productos {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Tarjeta exterior amarilla */
+.tarjeta-exterior {
+    background-color: #FDD030;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Tarjeta interior azul */
+.tarjeta-interior {
+    background-color: #1f57a7;
+    width: 85%;
+    height: 85%;
+    border-radius: 10px;
+    border: 5px solid white;
+    position: relative;
+}
+
+/* Texto PRODUCTO al fondo */
+.tarjeta-interior span {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #e91e63;
+    font-weight: bold;
+    font-family: 'Lexend Deca';
+}
+
+
+/*Estilos responsivos*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-hero {
+        height: 80vh;
+    }
+
+    .flechas {
+        width: 2rem;
+    }
+
+    .descripcion {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .logo-descripcion {
+        max-width: 225px;
+        width: 100%;
+    }
+
+    .contenedor-historia {
+        gap: 1rem;
+    }
+
+    .historia-titulo {
+        height: 60px;
+    }
+
+    .historia-texto {
+        padding: 0 1rem;
+    }
+
+    /* Sección de productos */
+    .contenedor-productos {
+        gap: 2rem;
+        height: 60vh;
+    }
+
+    .contenedor-productos .tarjeta-exterior:nth-child(4) {
+        display: none;
+    }
+
+    /* Tarjeta exterior amarilla */
+    .tarjeta-exterior {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Tarjeta interior azul */
+    .tarjeta-interior {
+        background-color: #1f57a7;
+        width: 85%;
+        height: 85%;
+        border-radius: 10px;
+        border: 5px solid white;
+        position: relative;
+    }
+
+    /* Texto PRODUCTO al fondo */
+    .tarjeta-interior span {
+        bottom: -20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-hero {
+        height: 50vh;
+        padding: 1rem;
+    }
+
+    .contenedor-hero {
+        height: 50vh;
+    }
+
+    .flechas {
+        width: 1.8rem;
+    }
+
+    .descripcion {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .descripcion p span {
+        display: none;
+    }
+
+    .logo-descripcion {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .contenedor-tecnicas {
+        padding: 2rem 1rem;
+    }
+
+    .tarjetas-tecnicas {
+        gap: 1rem;
+    }
+
+    .tarjeta {
+        width: 120px;
+    }
+
+    .tarjeta p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor-historia {
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.5rem;
+        gap: 0;
+        margin: 1rem 0 0;
+    }
+
+    .historia-imagen {
+        flex: 1;
+    }
+
+    .historia-imagen img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .historia-texto {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .historia-titulo,
+    .historia-descripcion {
+        max-width: 90%;
+    }
+
+    .historia-titulo {
+        height: 40px;
+    }
+
+    .historia-titulo h1 {
+        font-size: 1.2rem;
+    }
+
+    .historia-descripcion p:nth-child(2) {
+        font-size: 0.8rem;
+        display: none;
+    }
+
+
+    /* Sección de productos */
+    .contenedor-productos {
+        gap: 0.5rem;
+        padding: 0.5rem;
+        height: 25vh;
+    }
+
+    .contenedor-productos .tarjeta-exterior:nth-child(3),
+    .contenedor-productos .tarjeta-exterior:nth-child(4) {
+        display: none;
+    }
+
+    /* Tarjeta exterior amarilla */
+    .tarjeta-exterior {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Tarjeta interior azul */
+    .tarjeta-interior {
+        background-color: #1f57a7;
+        width: 85%;
+        height: 85%;
+        border-radius: 10px;
+        border: 5px solid white;
+        position: relative;
+    }
+
+    /* Texto PRODUCTO al fondo */
+    .tarjeta-interior span {
+        bottom: -20px;
+        font-size: 1rem;
+    }
+}

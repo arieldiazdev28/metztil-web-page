@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metztil | Comprar</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!--Hoja de estilos global-->
+    <link rel="stylesheet" href="css/comprar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="encabezado-superior">
+            <img src="img/logo_negro.png" alt="Logo de la marca Metztil">
+        </div>
+
+        <div class="barra-navegacion">
+            <!-- Lado izquierdo: icono de usuario y botón de menú -->
+            <div class="izquierda">
+                <img src="img/logo_usuario.png" alt="Logo del usuario">
+                <div class="checkbtn" id="menu-toggle">
+                    <i class="fas fa-bars" id="icon-open"></i>
+                </div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav id="nav">
+                <!-- Botón de cerrar dentro del nav -->
+                <div class="close-btn" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="separador"></div>
+                    </li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li>
+                        <div class="separador"></div>
+                    </li>
+                    <li><a href="comprar.html">Comprar</a></li>
+                    <li>
+                        <div class="separador"></div>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Lado derecho: carrito -->
+            <div class="derecha">
+                <img src="img/Busqueda.png" alt="Input de búsqueda" class="input-busqueda">
+                <img src="img/logo_carrito.png" alt="Ícono del carrito de compras"class= "carrito-icono">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>¿Deseas comprar algo este día?</h1>
+        <div class="contenedor-compras">
+            <!--Producto 1-->
+            <div class="compra">
+                <div class="imagen-producto">
+                    <img src="img/compra1.png" alt="Compra 1">
+                </div>
+                <p class="nombre-producto"><strong>Camiseta de algón</strong><br>Tie Dye - Rosa Talla S</p>
+                <span class="precio">$25.00</span>
+                <div class="compra-botones">
+                    <button class="comprar">Comprar</button>
+                    <button class="eliminar">✕</button>
+                </div>
+            </div>
+
+            <!--Producto 2-->
+            <div class="compra">
+                <div class="imagen-producto">
+                    <img src="img/compra2.png" alt="Compra 2">
+                </div>
+                <p class="nombre-producto"><strong>Camiseta de algón</strong><br>Descarga - Negra Talla L</p>
+                <span class="precio">$25.00</span>
+                <div class="compra-botones">
+                    <button class="comprar">Comprar</button>
+                    <button class="eliminar">✕</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Sección del footer -->
+    <footer>
+        <div class="logo-footer">
+            <img src="img/logo_negro.png" alt="Logo de Metztil">
+        </div>
+
+        <div class="enlaces-footer">
+            <div>
+                <p>TERMINOS Y<br>CONDICIONES</p>
+            </div>
+            <div>
+                <p>POLÍTICA DE<br>PRIVACIDAD</p>
+            </div>
+            <div>
+                <p>SERVICIOS<br>SOPORTE</p>
+            </div>
+            <div>
+                <p>SOBRE NOSOTROS<br>CONTACTANOS<br>RECURSOS</p>
+            </div>
+        </div>
+
+        <div class="frase-footer">
+            <p><em>"FRASE ICÓNICA"</em></p>
+        </div>
+
+        <div class="redes-sociales-footer">
+            <img src="img/logo_instagram.png" alt="Instagram">
+            <img src="img/logo_ticktock.png" alt="TikTok">
+            <img src="img/logo_whatsapp.png" alt="WhatsApp">
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

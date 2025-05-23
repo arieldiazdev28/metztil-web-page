@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(../assets/static/LexendDeca-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-Thin.ttf) format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-ExtraLight.ttf) format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/static/LexendDeca-ExtraBold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('../assets/static/LexendDeca-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6EE;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 100%;
+}
+
+.encabezado-superior {
+    flex: 2;
+    /*height: 120px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado-superior img {
+    max-width: 20%;
+    height: auto;
+}
+
+.barra-navegacion {
+    flex: 1;
+    /*height: 60px*/
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Lado izquierdo y derecho */
+.izquierda,
+.derecha {
+    display: flex;
+    align-items: center;
+}
+
+.derecha {
+    gap: 1rem;
+}
+
+.izquierda img, .carrito-icono {
+    width: 2rem;
+    height: auto;
+}
+
+.input-busqueda {
+    width: 8rem;
+    height: auto;
+}
+
+/* Contenedor del botón para abrir menú: solo visible en celular */
+.checkbtn {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+}
+
+/* Contenedor del botón para cerrar menú: solo visible en celular */
+.close-btn {
+    display: none;
+}
+
+/* Menú navegación */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+.separador {
+    width: 10px;
+    height: 10px;
+    background-color: #1f57a7;
+    border-radius: 100%;
+}
+
+footer {
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    /* 4 filas */
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+    color: #1f57a7;
+    font-family: 'Lexend Deca';
+}
+
+/* Logo ocupa columna 1 y filas 1 y 2 */
+.logo-footer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer img {
+    width: 60%;
+}
+
+/* Enlaces ocupa columna 2 y filas 1 y 2 */
+.enlaces-footer {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.enlaces-footer div p {
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Frase ocupa fila 3 completa */
+.frase-footer {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Redes ocupa fila 4 completa */
+.redes-sociales-footer {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.redes-sociales-footer img {
+    width: 25px;
+}
+
+
+
+/* Estilos responsivos */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .input-busqueda {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 120px;
+    }
+
+    .encabezado-superior img {
+        max-width: 50%;
+    }
+
+    .derecha {
+    gap: 0.5rem;
+}
+
+.izquierda img, .carrito-icono {
+    width: 1.5rem;
+    height: auto;
+}
+
+.input-busqueda {
+    width: 6rem;
+    height: auto;
+}
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #1f57a7;
+        opacity: 0.9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .separador {
+        display: none;
+    }
+
+    /* Botón de cerrar (X) */
+    .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav.active .close-btn {
+        display: block;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .logo-footer img {
+        width: 80%;
+        /* más grande en móviles */
+    }
+
+    .enlaces-footer div p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .frase-footer {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .redes-sociales-footer img {
+        width: 20px;
+    }
+
+}
