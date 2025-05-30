@@ -54,18 +54,17 @@
 
             <!-- Lado derecho: carrito -->
             <div class="derecha">
-                <img src="img/Busqueda.png" alt="Input de búsqueda" class="input-busqueda">
-                <img src="img/logo_carrito.png" alt="Ícono del carrito de compras"class= "carrito-icono">
+                <img src="img/logo_carrito.png" alt="Ícono del carrito de compras" class="carrito-icono" />
+                <img src="img/logo_usuario.png" alt="Logo del usuario" class="usuario-icono">
             </div>
         </div>
     </header> <!-- Fin del encabezado-->
 
     <!-- Sección principal del contenido -->
     <main>
-        <!-- Hero section -->
         <section class="contenedor-hero">
             <!-- Flecha a la izquierda -->
-            <div class="contenedor-flechas">
+            <div class="contenedor-flechas" id="anterior">
                 <img src="img/flecha_izq_blanco.png" class="flechas" alt="Flecha anterior">
             </div>
 
@@ -78,15 +77,12 @@
                         <span> mediante técnicas como tie-dye, serigrafía y pintura textil</span>
                     </p>
                 </div>
-
             </div>
-
-            <div class="contenedor-flechas">
+            <!-- Flecha a la derecha-->
+            <div class="contenedor-flechas" id="siguiente">
                 <img src="img/flecha_der_blanco.png" class="flechas" alt="Flecha siguiente">
             </div>
-
-
-        </section> <!-- Fin del Hero section -->
+        </section>
 
         <!-- Sección de técnicas -->
         <section class="contenedor-tecnicas">
@@ -142,25 +138,40 @@
             <!-- Producto 1 -->
             <div class="tarjeta-exterior">
                 <div class="tarjeta-interior">
-                    <span>PRODUCTO</span>
+                    <div class="imagen-contenedor">
+                        <img src="img/tie-dye-1.jpg" alt="">
+                    </div>
+                    <span>TIE-DYE</span>
                 </div>
             </div>
+
             <!-- Producto 2 -->
             <div class="tarjeta-exterior">
                 <div class="tarjeta-interior">
-                    <span>PRODUCTO</span>
+                    <div class="imagen-contenedor">
+                        <img src="img/descarga-index-1.jpg" alt="">
+                    </div>
+                    <span>DESCARGA</span>
                 </div>
             </div>
-            <!-- Producto 3 -->
+
+            <!-- Producto 3-->
             <div class="tarjeta-exterior">
                 <div class="tarjeta-interior">
-                    <span>PRODUCTO</span>
+                    <div class="imagen-contenedor">
+                        <img src="img/tie-dye-2.jpg" alt="">
+                    </div>
+                    <span>TIE-DYE</span>
                 </div>
             </div>
+
             <!-- Producto 4 -->
             <div class="tarjeta-exterior">
                 <div class="tarjeta-interior">
-                    <span>PRODUCTO</span>
+                    <div class="imagen-contenedor">
+                        <img src="img/tie-dye-3.jpg" alt="">
+                    </div>
+                    <span>TIE-DYE</span>
                 </div>
             </div>
 
@@ -201,8 +212,8 @@
         </div>
     </footer>
 
-
     <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

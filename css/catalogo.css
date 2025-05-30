@@ -4,13 +4,13 @@ main {
 
 /*Estilos del Hero Section*/
 .contenedor-hero {
-    padding: 2rem 2rem 2rem 0;
+    padding: 2rem;
     width: 100%;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url(/img/hero-catalogo-imagen.jpg);
+    background: url('../img/hero-catalogo-imagen.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -138,9 +138,19 @@ main {
 .imagen-placeholder {
     width: 90%;
     height: 220px;
-    background-color: white;
-    border: 2px dashed #ccc;
+    overflow: hidden; /* Evita que la imagen se desborde */
+    border-radius: 10px;
+    border: 2px solid #F6F6EE;
     margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.imagen-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px; 
 }
 
 .producto h3 {
@@ -259,6 +269,7 @@ main {
     .contenedor-serigrafia,
     .contenedor-descarga {
         height: 50vh;
+        padding: 0 1rem;
     }
 
     .categoria-contenido {
@@ -277,9 +288,9 @@ main {
     .producto:nth-child(4) {
         display: none;
     }
-
+    
     .imagen-placeholder {
-        width: 90%;
+        width: 100%;
         height: 160px;
     }
 

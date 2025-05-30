@@ -1,3 +1,4 @@
+//Menú dinámico para dispositivos móviles
 const menuToggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('nav');
 const closeBtn = document.getElementById('close-btn');
@@ -18,3 +19,4 @@ document.querySelectorAll('#nav a').forEach(link => {
     nav.classList.remove('active');
   });
 });
+

@@ -118,7 +118,11 @@ header {
     gap: 1rem;
 }
 
-.izquierda img, .carrito-icono {
+.izquierda img {
+    display: none;
+}
+
+.usuario-icono, .carrito-icono {
     width: 2rem;
     height: auto;
 }
@@ -253,7 +257,7 @@ footer {
     gap: 0.5rem;
 }
 
-.izquierda img, .carrito-icono {
+.izquierda img, .usuario-icono, .carrito-icono {
     width: 1.5rem;
     height: auto;
 }
@@ -322,12 +326,12 @@ footer {
 
     .logo-footer img {
         width: 80%;
-        /* más grande en móviles */
     }
 
     .enlaces-footer div p {
         font-size: 0.5rem;
         text-align: center;
+        padding: 1rem 0;
     }
 
     .frase-footer {
@@ -339,4 +343,7 @@ footer {
         width: 20px;
     }
 
+    footer .enlaces-footer div:nth-child(4) {
+        display: none;
+    }
 }
