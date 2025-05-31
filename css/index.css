@@ -58,7 +58,7 @@ main {
 
 .titulo-tecnicas {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Lexend Deca';
     position: relative;
     z-index: 2;
@@ -93,7 +93,6 @@ main {
 .contenedor-historia {
     width: 100%;
     height: auto;
-    /* Permitir altura dinámica */
     margin: 1.5rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -127,9 +126,10 @@ main {
 
 .historia-titulo {
     width: 100%;
-    max-width: 500px;
-    padding: 1rem;
+    max-width: 520px;
+    padding: 0.8rem;
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 400;
     border-radius: 50px;
     color: white;
     background-color: #E94B87;
@@ -140,7 +140,7 @@ main {
 
 .historia-descripcion {
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     text-align: justify;
 }
 
@@ -236,6 +236,10 @@ main {
         width: 100%;
     }
 
+    .titulo-tecnicas {
+        font-size: 2rem;
+    }
+
     .contenedor-historia {
         gap: 1rem;
     }
@@ -327,6 +331,9 @@ main {
         font-size: 0.8rem;
     }
 
+    .titulo-tecnicas {
+        font-size: 1.7rem;
+    }
     .contenedor-historia {
         justify-content: center;
         align-items: center;
